@@ -1,0 +1,16 @@
+Implementation: Pluto
+N: 1000, Elapsed time: 0.182966 seconds
+N: 2500, Elapsed time: 2.30102 seconds
+
+Implementation: Traco
+N: 1000, Elapsed time: 0.455406 seconds
+N: 2500, Elapsed time: 3.2295 seconds
+
+Implementation: Dapt
+N: 1000, Elapsed time: 0.211315 seconds
+N: 2500, Elapsed time: 2.57627 seconds
+
+Implementation: Original
+N: 1000, Elapsed time: 0.558303 seconds
+N: 2500, Elapsed time: 9.09219 seconds
+
