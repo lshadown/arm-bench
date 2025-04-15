@@ -26,7 +26,7 @@ string Comp;
 #include "mea/mea.h"
 
 void runAndLog(const std::string &algorithmName, const std::function<void()>& algorithm, const std::vector<int>& testSizes) {
-    std::ofstream outFile("../result/" + algorithmName + ".txt");
+    std::ofstream outFile("./result/" + algorithmName + ".txt");
 
     if (!outFile) {
         std::cerr << "Cannot open file: " << algorithmName + ".txt" << std::endl;
@@ -73,11 +73,11 @@ int main() {
     //runAndLog("Counting", []() { Counting::counting(); }, { 2200, 5000, 10000});
     //runAndLog("Knuth", []() { Knuth::knuth(); }, { 2200, 5000});
     //runAndLog("Mcc", []() { Mcc::mcc(); }, { 1000, 2200, 5000});
-    //runAndLog("Triang", []() { Triang::triang(); }, { 2200, 5000});
-    //runAndLog("Zuker", []() { Zuker::zuker(); }, { 2200});
+    //runAndLog("Triang", []() { Triang::triang(); }, { 10000});
+    //runAndLog("Zuker", []() { Zuker::zuker(); }, { 5000});
     //runAndLog("NW", []() { NW::nw(); }, { 2200, 5000, 10000});
-    //runAndLog("SW", []() { SW::sw(); }, { 2200, 5000, 10000});
-    //runAndLog("SW3D", []() { SW3D::sw3d(); }, { 2200, 5000});
+    //runAndLog("SW", []() { SW::sw(); }, {  10000});
+    //runAndLog("SW3D", []() { SW3D::sw3d(); }, { 2200});
     runAndLog("MEA", []() { MEA::mea(); }, { 2200, 5000, 10000});
     
     return 0;
